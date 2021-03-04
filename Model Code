@@ -36,7 +36,7 @@ model_data <- pbp %>% filter(pass == 1 | rush == 1, !is.na(label), penalty_flag 
   mutate(label = as.numeric(label))
 
 
-nrounds <- 500
+nrounds <- 1000
 params <-
   list(
     booster = "gbtree",
